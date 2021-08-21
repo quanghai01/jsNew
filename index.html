@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./icon/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <img src="./asset/img/tong-hop-hinh-nen-background-vector-designer-dep-do-phan-giai-fhd-2k-4k-moi-nhat-2.jpg" alt="">
+        <div id="Header">
+            <p class="header-name">Login Form</p>
+
+            <div class="header-login">
+                <label for="acc">
+                    <i class="ti-user"></i>
+                    User name
+                </label>
+                <input type="text" id="acc" class="name" placeholder="User name" autocomplete="on">
+                    
+                
+                
+                <label for="pass">
+                    <i class="ti-unlock"></i>
+                    Password
+                </label>
+                <input type="password" id="pass" class="name"   placeholder="Password" autocomplete="on">
+
+
+            </div>
+           
+            
+            
+            <div class="check">
+                
+                
+                <div class="check-box">
+                    <input type="checkbox" value="" id="check-box"> 
+                    <label for="check-box" id="remember">Remember me</label>
+                </div>
+
+                <div class="forgot">
+                    <a class="forget-pass" href="">Forgot password?</a>
+                </div>
+            </div>
+           
+            
+             
+            
+
+            <button onclick="checkLogin()" class="login">Login</button>
+
+        </div>
+    
+    
+    </div>
+    <script>
+        const acc_test = 'quanghai144';
+        const pass_test = 'nguyenhai';
+
+        
+        const showLogin = document.querySelector('.login');
+        
+        function checkLogin(){
+            var showAcc = document.getElementById('acc').value;
+            var showPass = document.getElementById('pass').value;
+            if(showAcc===acc_test && showPass===pass_test){
+                alert("tài khoản chính xác")
+            }
+            else  alert("nhập tài khoản sai")
+        }
+    </script>
+</body>
+
+
+</html>
